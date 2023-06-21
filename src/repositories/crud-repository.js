@@ -45,6 +45,10 @@ class CurdRepository {
         id: id,
       },
     });
+   
+    if (response[0]==0) {
+      throw new AppError('resouce not found', StatusCodes.NOT_FOUND);
+    }
     return response;
   }
 }
