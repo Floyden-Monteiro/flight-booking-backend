@@ -13,11 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 // app.delete('/api/v1/blogs', (req, res) => {});
 
 app.use('/api', apiRoutes);
+// app.use('/flightsService/api', apiRoutes);
 
 app.listen(ServerConfig.PORT, async () => {
   console.log(`Successfully started the sever on PORT : ${ServerConfig.PORT}`);
-
-  
-
-
 });
